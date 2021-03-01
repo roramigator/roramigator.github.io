@@ -1,0 +1,11 @@
+.name {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 7vw;
+
+  @include small("up") {
+    font-size: 4vw;
+    justify-content: flex-end;
+  }
+}

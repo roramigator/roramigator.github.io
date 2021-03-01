@@ -1,0 +1,10 @@
+.hero {
+  width: calc(100% - 100px);
+  height: calc(100% - 50px);
+  margin: 10px 50px;
+
+  @include small("up") {
+    width: $hero-sm;
+    height: $hero-sm;
+  }
+}

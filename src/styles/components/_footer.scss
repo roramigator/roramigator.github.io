@@ -1,0 +1,10 @@
+.footer {
+  font-family: "Cutive Mono", monospace;
+  display: flex;
+  @include small("up") {
+    justify-content: center;
+  }
+  .social {
+    display: flex;
+  }
+}

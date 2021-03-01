@@ -1,25 +1,28 @@
-import "./App.css";
-
-import Profile from "./components/Profile";
+import Body from "./components/Body";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Profile />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    // do: change Body to Container
+    <Body>
+      <Header />
+      <div className="contact">
+        <p className="contact-button">
+          <i className="bx bx-mail-send"></i>
+          <a href="mailto:roberto@morado.dev" className="contact-email">
+            email
+          </a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </div>
+
+      <div className="footer">
+        <p className="social">
+          <i className="bx bxl-github"></i>
+          <i className="bx bxl-twitter"></i>
+          <span>@roramigator</span>
+        </p>
+      </div>
+    </Body>
   );
 }
 

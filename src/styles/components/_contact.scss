@@ -1,0 +1,28 @@
+.contact {
+  display: flex;
+  margin: 50px 0;
+
+  @include small("up") {
+    justify-content: center;
+  }
+
+  .contact-button {
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(101, 88, 126, 1);
+    color: white;
+    padding: 7px 14px;
+    border-radius: 3px;
+    font-weight: bold;
+
+    .bx-mail-send {
+      font-size: 20px;
+      margin-right: 5px;
+    }
+
+    .contact-email {
+      text-decoration: none;
+      color: snow;
+    }
+  }
+}
